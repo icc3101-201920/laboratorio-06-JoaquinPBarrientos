@@ -6,6 +6,8 @@ namespace Laboratorio_5_OOP_201902
 {
     class Program
     {
+        private static object visualization;
+
         static void Main(string[] args)
         {
             Game game = new Game();
@@ -32,8 +34,8 @@ namespace Laboratorio_5_OOP_201902
                 Console.WriteLine($"{counter++}: {card.Name}");
             }
 
-            Visualization visualization = new Visualization();
-            visualization.ShowHand(player.Hand);
+            
+            ShowHand(player.Hand);
             
             //Test Change Card
             
@@ -83,6 +85,11 @@ namespace Laboratorio_5_OOP_201902
             //Console.WriteLine(String.Join(", ", board.GetLongRangeAttackPoints()));
             
             
+        }
+
+        private static void ShowHand(Hand hand)
+        {
+            throw new NotImplementedException();
         }
     }
 }

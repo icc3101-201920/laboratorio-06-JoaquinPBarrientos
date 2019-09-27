@@ -97,7 +97,8 @@ namespace Laboratorio_5_OOP_201902
         }
         public void AddDecks()
         {
-            string path = "/joaquinbarrientos/desktop/Universidad/6.Sexto Semestre/POO/laboratorio-06-JoaquinPBarrientos/ICC3103-OOP-Solucion-Lab-05-master/Laboratorio_5_OOP_201902/Files/Decks.txt";
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../Files/Decks.txt");
+            Console.WriteLine(path);
             StreamReader reader = new StreamReader(path);
             int deckCounter = 0;
             List<Card> cards = new List<Card>();
@@ -138,7 +139,7 @@ namespace Laboratorio_5_OOP_201902
         }
         public void AddCaptains()
         {
-            string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent + @"\Files\Captains.txt";
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../Files/Captains.txt");
             StreamReader reader = new StreamReader(path);
             while (!reader.EndOfStream)
             {

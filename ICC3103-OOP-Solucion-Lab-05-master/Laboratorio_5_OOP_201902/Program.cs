@@ -31,6 +31,9 @@ namespace Laboratorio_5_OOP_201902
             {
                 Console.WriteLine($"{counter++}: {card.Name}");
             }
+
+            Visualization visualization = new Visualization();
+            visualization.ShowHand(player.Hand);
             
             //Test Change Card
             

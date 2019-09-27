@@ -97,7 +97,7 @@ namespace Laboratorio_5_OOP_201902
         }
         public void AddDecks()
         {
-            string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent + @"\Files\Decks.txt";
+            string path = "/joaquinbarrientos/desktop/Universidad/6.Sexto Semestre/POO/laboratorio-06-JoaquinPBarrientos/ICC3103-OOP-Solucion-Lab-05-master/Laboratorio_5_OOP_201902/Files/Decks.txt";
             StreamReader reader = new StreamReader(path);
             int deckCounter = 0;
             List<Card> cards = new List<Card>();
